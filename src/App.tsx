@@ -17,22 +17,7 @@ const ACCOUNTS = [
   { id: 12, company: "Lionsgate Entertainment", industry: "Entertainment/Film", cmo: "Deron Triff", cmoTitle: "EVP Digital Marketing", intentScore: 8, strikeWindow: "green", dealSize: "$1.5M", currentDSP: "The Trade Desk", warmPath: true, warmConnector: "LA studio circuit — shared events with Sony + Paramount contacts", stage: "Cold", signals: [{ type: "hot", text: "John Wick universe + Hunger Games franchise extensions — 2025 theatrical slate is massive", date: "4 days ago" }, { type: "hot", text: "Lionsgate+ streaming service growing — programmatic subscriber acquisition campaigns scaling", date: "1 week ago" }], contacts: [{ name: "Deron Triff", title: "EVP Digital Marketing", angle: "Controls digital + programmatic for all theatrical releases" }] },
   { id: 13, company: "Live Nation Entertainment", industry: "Live Entertainment/Ticketing", cmo: "Melissa Miller", cmoTitle: "Chief Marketing Officer", intentScore: 9, strikeWindow: "green", dealSize: "$2.1M", currentDSP: "Mixed TTD + direct", warmPath: true, warmConnector: "SeatGeek + StubHub overlapping contacts create warm intro path", stage: "Cold", signals: [{ type: "hot", text: "2025 concert season announced — major events driving geo-targeted programmatic campaigns", date: "2 days ago" }, { type: "hot", text: "Live Nation using programmatic to drive last-mile ticket sales — StackAdapt's CTV + native is perfect fit", date: "5 days ago" }], contacts: [{ name: "Melissa Miller", title: "CMO", angle: "Owns all venue + event marketing globally" }] },
   { id: 14, company: "News Corporation", industry: "Media/Publishing", cmo: "David Kline", cmoTitle: "Chief Marketing Officer", intentScore: 6, strikeWindow: "yellow", dealSize: "$1.7M", currentDSP: "DV360", warmPath: false, warmConnector: "", stage: "Cold", signals: [{ type: "warm", text: "News Corp's digital properties (WSJ, NY Post, Dow Jones) running programmatic audience extension campaigns", date: "2 weeks ago" }, { type: "warm", text: "Subscription acquisition for WSJ shifting to performance programmatic channels", date: "3 weeks ago" }], contacts: [{ name: "David Kline", title: "CMO", angle: "Cross-portfolio marketing strategy" }, { name: "Suzi Watford", title: "EVP Marketing, WSJ", angle: "Day-to-day subscription + acquisition campaigns" }] },
-  { id: 15, company: "Nike", industry: "Retail/Apparel", cmo: "Nicole Hubbard Graham", cmoTitle: "Chief Marketing Officer", intentScore: 10, strikeWindow: "green", dealSize: "$3.2M", currentDSP: "The Trade Desk", warmPath: true, warmConnector: "Steve Wharton + Creed Petit both know Wesley Collett (wes.collett@nike.com) — Director, Integrated Media, Brand Jordan NA. Two confirmed warm paths in.", stage: "Engaged",
-    agencyPartners: [
-      { agency: "PMG", role: "AOR — Programmatic & Digital Media", location: "Dallas, TX", contact: "Earl Hwang", contactTitle: "Programmatic Lead", connection: "Creed Petit knows Earl directly", connectionType: "warm" },
-      { agency: "Wieden+Kennedy", role: "AOR — Creative & Above-the-Line Digital", location: "Portland, OR", contact: "Brian Goldstein", contactTitle: "Digital Strategy", connection: "Bo Janes knows Brian directly", connectionType: "warm" },
-    ],
-    economicBuyer: { name: "Joe Brooks", title: "Head of North America Integrated Media", company: "Nike", note: "Economic Buyer — controls NA integrated media budget. All programmatic strategy flows through Joe." },
-    meddpicc: {
-      metrics: { status: "partial", note: "Nike shifting from brand to performance — StackAdapt can show ROAS lift vs TTD, CPM efficiency on CTV + native" },
-      economicBuyer: { status: "identified", note: "Joe Brooks — Head of NA Integrated Media. Economic Buyer confirmed." },
-      decisionCriteria: { status: "unknown", note: "Need to map: TTD contract terms, DV360 usage, PMG's DSP preferences. Earl Hwang at PMG likely holds this intel." },
-      decisionProcess: { status: "partial", note: "PMG runs activation — Nike brand approves strategy. Brian Goldstein (W+K) influences creative-to-media alignment." },
-      paperProcess: { status: "unknown", note: "Unknown — likely routed through PMG as buying entity. Need to establish if Nike or agency holds IO." },
-      pain: { status: "strong", note: "Elliott Hill brand reset = urgency. Nike needs performance DSP to prove digital ROI. TTD not delivering on lower-funnel metrics." },
-      champion: { status: "identified", note: "Wesley Collett — Dir. Integrated Media, Brand Jordan NA. Warm contact via Steve + Creed. Can champion internally." },
-      competition: { status: "known", note: "The Trade Desk (incumbent). DV360 in mix. PMG may have preferred DSP relationships — need to qualify with Earl." },
-    }, signals: [{ type: "hot", text: "Nike brand reset under new CEO Elliott Hill — massive media investment shift to digital performance", date: "2 days ago" }, { type: "hot", text: "Job posting: VP Programmatic Media — signals DSP strategy overhaul in progress", date: "4 days ago" }], contacts: [{ name: "Nicole Hubbard Graham", title: "CMO", email: "", phone: "", angle: "Owns full brand + performance budget globally" }, { name: "Wesley Collett", title: "Director, Integrated Media — Brand Jordan NA", email: "wes.collett@nike.com", phone: "", angle: "WARM CONTACT via Steve Wharton + Creed Petit — entry point into Nike media buying" }, { name: "Jackie Harshman", title: "Director, Integrated Media (North America)", email: "jackie.harshman@nike.com", phone: "", angle: "Key integrated media decision maker — controls cross-channel NA buys" }, { name: "Allison Springer", title: "Director, Women's Integrated Media (NA)", email: "allison.springer@nike.com", phone: "", angle: "Controls NA women's integrated media budget" }, { name: "Marco Ramo", title: "AdTech, Data & Experimentation Director, Integrated Media", email: "marco.ramo@nike.com", phone: "", angle: "AdTech decision maker — StackAdapt tech + data story lands here" }, { name: "Jacqueline Reum", title: "Manager, Programmatic Display & Video", email: "", phone: "", angle: "DIRECT DSP BUYER — owns programmatic display & video budget at Nike" }, { name: "Kamauri Yeh", title: "Global VP, Digital Integrated Retail Marketing", email: "kamauri.yeh@nike.com", phone: "(503) 671-4469", angle: "Senior budget holder — strategic exec relationship target" }, { name: "Brittany Grosvenor", title: "Global Seasonal Strategy Director, Integrated Media", email: "brittany.grosvenor@nike.com", phone: "", angle: "Controls global seasonal media strategy + planning" }] },
+  { id: 15, company: "Nike", industry: "Retail/Apparel", cmo: "Nicole Hubbard Graham", cmoTitle: "Chief Marketing Officer", intentScore: 10, strikeWindow: "green", dealSize: "$3.2M", currentDSP: "The Trade Desk", warmPath: true, warmConnector: "Your CRO has a direct relationship via sports marketing network", stage: "Engaged", signals: [{ type: "hot", text: "Nike brand reset under new CEO Elliott Hill — massive media investment shift to digital performance", date: "2 days ago" }, { type: "hot", text: "Job posting: VP Programmatic Media — signals DSP strategy overhaul in progress", date: "4 days ago" }], contacts: [{ name: "Nicole Hubbard Graham", title: "CMO", angle: "Owns full brand + performance budget globally" }, { name: "Heidi O'Neill", title: "President, Consumer & Marketplace", angle: "Key influencer on media investment" }] },
   { id: 16, company: "Nordstrom", industry: "Retail/Luxury", cmo: "Alejandra Meza", cmoTitle: "Chief Marketing Officer", intentScore: 7, strikeWindow: "yellow", dealSize: "$1.3M", currentDSP: "DV360", warmPath: false, warmConnector: "", stage: "Cold", signals: [{ type: "warm", text: "Nordstrom going private — new ownership likely to rethink media strategy and DSP relationships", date: "1 week ago" }, { type: "warm", text: "Nordstrom Rack expansion driving performance-focused programmatic acquisition campaigns", date: "2 weeks ago" }], contacts: [{ name: "Alejandra Meza", title: "CMO", angle: "Full brand + performance marketing owner" }] },
   { id: 17, company: "Paramount", industry: "Entertainment/Streaming", cmo: "Marc Weinstock", cmoTitle: "President, Worldwide Marketing", intentScore: 8, strikeWindow: "green", dealSize: "$2.4M", currentDSP: "Mixed TTD + DV360", warmPath: true, warmConnector: "Shared agency relationships at Publicis Media", stage: "Cold", signals: [{ type: "hot", text: "Paramount+ + Pluto TV merger strategy — massive programmatic subscriber acquisition in play", date: "3 days ago" }, { type: "hot", text: "Mission Impossible + Sonic 4 theatrical slate — 2025 P&A budgets confirmed massive", date: "1 week ago" }], contacts: [{ name: "Marc Weinstock", title: "President Worldwide Marketing", angle: "Controls theatrical + streaming P&A" }, { name: "Ron Feinbaum", title: "EVP Media", angle: "Day-to-day programmatic decisions" }] },
   { id: 18, company: "Roblox Corporation", industry: "Gaming/Metaverse", cmo: "Barbara Messing", cmoTitle: "Chief Marketing Officer", intentScore: 9, strikeWindow: "green", dealSize: "$1.8M", currentDSP: "Mixed + direct", warmPath: true, warmConnector: "Epic Games + Roblox share investor network (Andreessen Horowitz)", stage: "Cold", signals: [{ type: "hot", text: "Roblox expanding ad platform — also buying programmatic to drive developer + brand partner acquisition", date: "3 days ago" }, { type: "hot", text: "Roblox 88M DAU — running massive programmatic campaigns targeting Gen Z + Gen Alpha", date: "5 days ago" }], contacts: [{ name: "Barbara Messing", title: "CMO", angle: "Owns brand + growth marketing for Roblox platform" }] },
@@ -318,44 +303,6 @@ export default function App() {
                       <div style={{ fontSize: 13, color: "#d1d5db" }}>{selected.warmConnector}</div>
                     </div>
                   )}
-                  {/* Economic Buyer callout for Nike */}
-                  {selected.economicBuyer && (
-                    <div style={{ background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.25)", borderRadius: 8, padding: 14, marginBottom: 20 }}>
-                      <div style={{ fontSize: 11, color: "#ef4444", fontWeight: 700, marginBottom: 6, letterSpacing: "1px" }}>💰 ECONOMIC BUYER</div>
-                      <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-                        <div style={{ width: 34, height: 34, borderRadius: "50%", background: "rgba(239,68,68,0.15)", border: "1px solid rgba(239,68,68,0.4)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: "#ef4444", flexShrink: 0 }}>{selected.economicBuyer.name[0]}</div>
-                        <div>
-                          <div style={{ fontSize: 13, fontWeight: 700, color: "#fff" }}>{selected.economicBuyer.name}</div>
-                          <div style={{ fontSize: 11, color: "#6b7280" }}>{selected.economicBuyer.title} · {selected.economicBuyer.company}</div>
-                          <div style={{ fontSize: 11, color: "#fca5a5", marginTop: 3 }}>{selected.economicBuyer.note}</div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Agency Partners for Nike */}
-                  {selected.agencyPartners && (
-                    <div style={{ marginBottom: 20 }}>
-                      <div style={{ fontSize: 11, fontWeight: 700, color: "#6b7280", letterSpacing: "1px", marginBottom: 10 }}>AGENCY PARTNERS</div>
-                      {selected.agencyPartners.map((a, i) => (
-                        <div key={i} style={{ background: "#0d1117", border: `1px solid ${a.connectionType === "warm" ? "rgba(139,92,246,0.3)" : "#1e2530"}`, borderRadius: 8, padding: 14, marginBottom: 8 }}>
-                          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6 }}>
-                            <div style={{ fontSize: 13, fontWeight: 700, color: "#fff" }}>{a.agency}</div>
-                            <div style={{ fontSize: 10, color: "#8b5cf6", fontWeight: 700, background: "rgba(139,92,246,0.1)", padding: "2px 8px", borderRadius: 4 }}>{a.location}</div>
-                          </div>
-                          <div style={{ fontSize: 11, color: "#6b7280", marginBottom: 8 }}>{a.role}</div>
-                          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-                            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "rgba(139,92,246,0.15)", border: "1px solid rgba(139,92,246,0.3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 700, color: "#c4b5fd", flexShrink: 0 }}>{a.contact[0]}</div>
-                            <div>
-                              <div style={{ fontSize: 12, fontWeight: 600, color: "#e5e7eb" }}>{a.contact} — {a.contactTitle}</div>
-                              <div style={{ fontSize: 11, color: "#8b5cf6" }}>🔗 {a.connection}</div>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-
                   <div style={{ marginBottom: 24 }}>
                     <div style={{ fontSize: 11, fontWeight: 700, color: "#6b7280", letterSpacing: "1px", marginBottom: 10 }}>KEY CONTACTS</div>
                     {selected.contacts.map((c, i) => (
@@ -368,36 +315,6 @@ export default function App() {
                       </div>
                     ))}
                   </div>
-
-                  {/* MEDDPICC Scorecard for Nike */}
-                  {selected.meddpicc && (
-                    <div style={{ marginBottom: 24 }}>
-                      <div style={{ fontSize: 11, fontWeight: 700, color: "#6b7280", letterSpacing: "1px", marginBottom: 12 }}>MEDDPICC SCORECARD</div>
-                      {[
-                        { key: "metrics", label: "M — Metrics", icon: "📊" },
-                        { key: "economicBuyer", label: "E — Economic Buyer", icon: "💰" },
-                        { key: "decisionCriteria", label: "D — Decision Criteria", icon: "📋" },
-                        { key: "decisionProcess", label: "D — Decision Process", icon: "🔄" },
-                        { key: "paperProcess", label: "P — Paper Process", icon: "📝" },
-                        { key: "pain", label: "I — Implicate the Pain", icon: "🎯" },
-                        { key: "champion", label: "C — Champion", icon: "⭐" },
-                        { key: "competition", label: "C — Competition", icon: "⚔️" },
-                      ].map((item) => {
-                        const data = selected.meddpicc[item.key];
-                        const statusColor = data.status === "identified" || data.status === "strong" || data.status === "known" ? "#22c55e" : data.status === "partial" ? "#f59e0b" : "#ef4444";
-                        const statusLabel = data.status === "identified" ? "✓ IDENTIFIED" : data.status === "strong" ? "✓ STRONG" : data.status === "known" ? "✓ KNOWN" : data.status === "partial" ? "~ PARTIAL" : "✗ UNKNOWN";
-                        return (
-                          <div key={item.key} style={{ background: "#0d1117", border: "1px solid #1e2530", borderLeft: `3px solid ${statusColor}`, borderRadius: 8, padding: 12, marginBottom: 8 }}>
-                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-                              <div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{item.icon} {item.label}</div>
-                              <div style={{ fontSize: 10, fontWeight: 700, color: statusColor }}>{statusLabel}</div>
-                            </div>
-                            <div style={{ fontSize: 11, color: "#9ca3af", lineHeight: 1.5 }}>{data.note}</div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
                   <button onClick={() => generate("brief", `You are an elite enterprise sales coach. Write a concise executive intelligence brief for ${selected.cmo}, ${selected.cmoTitle} at ${selected.company} (${selected.industry}). Cover: their likely top 3 priorities right now, how to position StackAdapt (a premium programmatic DSP) against their current platform (${selected.currentDSP}), what they personally care about based on their title, and one killer opening line for an email. Key signal: ${selected.signals[0]?.text}. Be specific, sharp, and actionable. No fluff. Max 300 words.`, selected.id)} style={{ width: "100%", padding: "12px 20px", background: BRAND, border: "none", borderRadius: 8, color: "#fff", fontWeight: 700, cursor: "pointer", fontSize: 13, marginBottom: 12 }}>
                     {loading[`brief-${selected.id}`] ? "✦ Generating Brief..." : "✦ Generate Executive Brief"}
                   </button>
@@ -416,121 +333,33 @@ export default function App() {
             <div>
               <div style={{ fontSize: 20, fontWeight: 800, color: "#fff", marginBottom: 6 }}>Relationship Network</div>
               <div style={{ fontSize: 13, color: "#6b7280", marginBottom: 24 }}>Your warm paths to every CMO — {warmCount} of {accounts.length} accounts reachable</div>
-
-              {/* Nike Spotlight */}
-              <div style={{ background: "#0d1117", border: "1px solid rgba(0,97,255,0.4)", borderRadius: 12, padding: 24, marginBottom: 20 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 20 }}>
-                  <div style={{ fontSize: 11, fontWeight: 700, color: BRAND, letterSpacing: "1px" }}>🎯 SPOTLIGHT — NIKE WARM PATH</div>
-                  <div style={{ flex: 1, height: 1, background: "rgba(0,97,255,0.2)" }} />
-                  <div style={{ fontSize: 10, color: "#22c55e", fontWeight: 700 }}>2 CONFIRMED PATHS IN</div>
-                </div>
-                <svg width="100%" height="320" viewBox="0 0 760 320">
-                  {/* StackAdapt center */}
-                  <circle cx="120" cy="160" r="44" fill={BRAND} opacity="0.15" stroke={BRAND} strokeWidth="2" />
-                  <circle cx="120" cy="160" r="28" fill={BRAND} opacity="0.3" />
-                  <rect x="104" y="149" width="32" height="7" rx="2" fill="white" />
-                  <rect x="104" y="159" width="23" height="7" rx="2" fill="white" opacity="0.7" />
-                  <rect x="104" y="169" width="14" height="7" rx="2" fill="white" opacity="0.4" />
-                  <text x="120" y="218" textAnchor="middle" fill="#fff" fontSize="11" fontWeight="700">StackAdapt</text>
-                  <text x="120" y="231" textAnchor="middle" fill="#6b7280" fontSize="9">You</text>
-
-                  {/* Connector lines to Steve and Creed */}
-                  <line x1="164" y1="130" x2="296" y2="100" stroke="#8b5cf6" strokeWidth="2" strokeDasharray="6,4" opacity="0.8" />
-                  <line x1="164" y1="190" x2="296" y2="220" stroke="#8b5cf6" strokeWidth="2" strokeDasharray="6,4" opacity="0.8" />
-
-                  {/* Steve Wharton */}
-                  <circle cx="330" cy="90" r="36" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" strokeWidth="2" />
-                  <text x="330" y="85" textAnchor="middle" fill="#c4b5fd" fontSize="10" fontWeight="700">Steve</text>
-                  <text x="330" y="98" textAnchor="middle" fill="#c4b5fd" fontSize="10" fontWeight="700">Wharton</text>
-                  <text x="330" y="136" textAnchor="middle" fill="#8b5cf6" fontSize="9">StackAdapt AE</text>
-
-                  {/* Creed Petit */}
-                  <circle cx="330" cy="230" r="36" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" strokeWidth="2" />
-                  <text x="330" y="225" textAnchor="middle" fill="#c4b5fd" fontSize="10" fontWeight="700">Creed</text>
-                  <text x="330" y="238" textAnchor="middle" fill="#c4b5fd" fontSize="10" fontWeight="700">Petit</text>
-                  <text x="330" y="276" textAnchor="middle" fill="#8b5cf6" fontSize="9">StackAdapt AE</text>
-
-                  {/* Lines to Wesley */}
-                  <line x1="366" y1="100" x2="490" y2="148" stroke="#22c55e" strokeWidth="2.5" opacity="0.9" />
-                  <line x1="366" y1="220" x2="490" y2="172" stroke="#22c55e" strokeWidth="2.5" opacity="0.9" />
-
-                  {/* Wesley Collett */}
-                  <circle cx="530" cy="160" r="42" fill="rgba(34,197,94,0.15)" stroke="#22c55e" strokeWidth="2.5" />
-                  <text x="530" y="150" textAnchor="middle" fill="#4ade80" fontSize="10" fontWeight="700">Wesley</text>
-                  <text x="530" y="163" textAnchor="middle" fill="#4ade80" fontSize="10" fontWeight="700">Collett</text>
-                  <text x="530" y="214" textAnchor="middle" fill="#22c55e" fontSize="9">Dir. Integrated Media</text>
-                  <text x="530" y="226" textAnchor="middle" fill="#22c55e" fontSize="9">Brand Jordan NA</text>
-
-                  {/* Line to Nike */}
-                  <line x1="572" y1="160" x2="650" y2="160" stroke="#0061FF" strokeWidth="2.5" opacity="0.9" />
-
-                  {/* Nike node */}
-                  <circle cx="670" cy="200" r="34" fill="rgba(0,97,255,0.15)" stroke="#0061FF" strokeWidth="2.5" />
-                  <text x="670" y="195" textAnchor="middle" fill="#60a5fa" fontSize="12" fontWeight="800">NIKE</text>
-                  <text x="670" y="210" textAnchor="middle" fill="#60a5fa" fontSize="10">$3.2M</text>
-                  <text x="670" y="247" textAnchor="middle" fill={BRAND} fontSize="9" fontWeight="700">INTENT: 10/10</text>
-
-                  {/* Joe Brooks — Economic Buyer */}
-                  <line x1="572" y1="148" x2="640" y2="100" stroke="#ef4444" strokeWidth="2" opacity="0.8" />
-                  <circle cx="672" cy="82" r="34" fill="rgba(239,68,68,0.15)" stroke="#ef4444" strokeWidth="2" />
-                  <text x="672" y="75" textAnchor="middle" fill="#fca5a5" fontSize="10" fontWeight="700">Joe</text>
-                  <text x="672" y="88" textAnchor="middle" fill="#fca5a5" fontSize="10" fontWeight="700">Brooks</text>
-                  <text x="672" y="126" textAnchor="middle" fill="#ef4444" fontSize="8">Head, NA</text>
-                  <text x="672" y="137" textAnchor="middle" fill="#ef4444" fontSize="8">Integrated Media</text>
-                  <text x="672" y="54" textAnchor="middle" fill="#ef4444" fontSize="8" fontWeight="700">💰 ECONOMIC BUYER</text>
-
-                  {/* PMG / Earl Hwang */}
-                  <line x1="164" y1="175" x2="296" y2="270" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="5,4" opacity="0.7" />
-                  <circle cx="328" cy="285" r="30" fill="rgba(245,158,11,0.1)" stroke="#f59e0b" strokeWidth="1.5" />
-                  <text x="328" y="280" textAnchor="middle" fill="#fcd34d" fontSize="9" fontWeight="700">Earl Hwang</text>
-                  <text x="328" y="293" textAnchor="middle" fill="#f59e0b" fontSize="8">PMG Dallas</text>
-                  <text x="222" y="245" textAnchor="middle" fill="#f59e0b" fontSize="8">Creed knows</text>
-
-                  {/* W+K / Brian Goldstein */}
-                  <line x1="120" y1="120" x2="200" y2="50" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="5,4" opacity="0.7" />
-                  <circle cx="230" cy="36" r="30" fill="rgba(245,158,11,0.1)" stroke="#f59e0b" strokeWidth="1.5" />
-                  <text x="230" y="31" textAnchor="middle" fill="#fcd34d" fontSize="9" fontWeight="700">Brian Goldstein</text>
-                  <text x="230" y="44" textAnchor="middle" fill="#f59e0b" fontSize="8">W+K Portland</text>
-                  <text x="155" y="72" textAnchor="middle" fill="#f59e0b" fontSize="8">Bo knows</text>
-
-                  {/* Labels on lines */}
-                  <text x="230" y="98" textAnchor="middle" fill="#8b5cf6" fontSize="9">knows</text>
-                  <text x="230" y="218" textAnchor="middle" fill="#8b5cf6" fontSize="9">knows</text>
-                  <text x="428" y="118" textAnchor="middle" fill="#22c55e" fontSize="9">warm intro</text>
-                  <text x="428" y="210" textAnchor="middle" fill="#22c55e" fontSize="9">warm intro</text>
-                  <text x="606" y="168" textAnchor="middle" fill={BRAND} fontSize="9">entry point</text>
-                </svg>
-              </div>
-
-              {/* Full network */}
               <div style={{ background: "#0d1117", border: "1px solid #1e2530", borderRadius: 12, padding: 24, marginBottom: 20 }}>
-                <div style={{ fontSize: 13, fontWeight: 700, color: "#fff", marginBottom: 16 }}>Full Network Map — All 33 Accounts</div>
-                <svg width="100%" height="420" viewBox="0 0 760 420">
-                  <circle cx="380" cy="210" r="44" fill={BRAND} opacity="0.12" stroke={BRAND} strokeWidth="2" />
-                  <circle cx="380" cy="210" r="28" fill={BRAND} opacity="0.25" />
-                  <rect x="364" y="200" width="32" height="7" rx="2" fill="white" />
-                  <rect x="364" y="210" width="23" height="7" rx="2" fill="white" opacity="0.7" />
-                  <rect x="364" y="220" width="14" height="7" rx="2" fill="white" opacity="0.4" />
-                  <text x="380" y="268" textAnchor="middle" fill="#fff" fontSize="11" fontWeight="700">StackAdapt</text>
+                <svg width="100%" height="480" viewBox="0 0 760 480">
+                  <circle cx="380" cy="240" r="48" fill={BRAND} opacity="0.12" stroke={BRAND} strokeWidth="2" />
+                  <circle cx="380" cy="240" r="30" fill={BRAND} opacity="0.25" />
+                  <rect x="362" y="228" width="36" height="8" rx="2" fill="white" />
+                  <rect x="362" y="239" width="26" height="8" rx="2" fill="white" opacity="0.7" />
+                  <rect x="362" y="250" width="16" height="8" rx="2" fill="white" opacity="0.4" />
+                  <text x="380" y="302" textAnchor="middle" fill="#fff" fontSize="11" fontWeight="700" fontFamily="Manrope">StackAdapt</text>
                   {CONNECTORS.map((c, i) => {
                     const angle = (i / CONNECTORS.length) * Math.PI * 2 - Math.PI / 2;
-                    const cx = 380 + Math.cos(angle) * 150;
-                    const cy = 210 + Math.sin(angle) * 150;
+                    const cx = 380 + Math.cos(angle) * 160;
+                    const cy = 240 + Math.sin(angle) * 160;
                     return (
                       <g key={i}>
-                        <line x1="380" y1="210" x2={cx} y2={cy} stroke="#8b5cf6" strokeWidth="1.5" strokeDasharray="5,5" opacity="0.5" />
+                        <line x1="380" y1="240" x2={cx} y2={cy} stroke="#8b5cf6" strokeWidth="1.5" strokeDasharray="5,5" opacity="0.5" />
                         <circle cx={cx} cy={cy} r="26" fill="rgba(139,92,246,0.12)" stroke="#8b5cf6" strokeWidth="1.5" />
                         <text x={cx} y={cy - 4} textAnchor="middle" fill="#c4b5fd" fontSize="9" fontWeight="700">{c.name.split(" ").slice(0, 2).join(" ")}</text>
                         <text x={cx} y={cy + 8} textAnchor="middle" fill="#8b5cf6" fontSize="8">{c.leverage}</text>
                         {c.relationships.map((r, j) => {
                           const aAngle = angle + (j - (c.relationships.length - 1) / 2) * 0.35;
-                          const ax = cx + Math.cos(aAngle) * 95;
-                          const ay = cy + Math.sin(aAngle) * 95;
+                          const ax = cx + Math.cos(aAngle) * 100;
+                          const ay = cy + Math.sin(aAngle) * 100;
                           return (
                             <g key={j}>
                               <line x1={cx} y1={cy} x2={ax} y2={ay} stroke="#22c55e" strokeWidth="1" opacity="0.4" />
-                              <circle cx={ax} cy={ay} r="16" fill="rgba(34,197,94,0.08)" stroke="#22c55e" strokeWidth="1" />
-                              <text x={ax} y={ay + 4} textAnchor="middle" fill="#22c55e" fontSize="7" fontWeight="600">{r.split(" ")[0]}</text>
+                              <circle cx={ax} cy={ay} r="18" fill="rgba(34,197,94,0.08)" stroke="#22c55e" strokeWidth="1" />
+                              <text x={ax} y={ay + 4} textAnchor="middle" fill="#22c55e" fontSize="8" fontWeight="600">{r.split(" ")[0]}</text>
                             </g>
                           );
                         })}
@@ -539,7 +368,6 @@ export default function App() {
                   })}
                 </svg>
               </div>
-
               <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
                 {CONNECTORS.map((c, i) => (
                   <div key={i} style={{ background: "#0d1117", border: "1px solid #1e2530", borderRadius: 10, padding: 16 }}>
@@ -601,7 +429,7 @@ export default function App() {
                 {selected ? (
                   <div style={{ background: "#0d1117", border: "1px solid #1e2530", borderRadius: 12, padding: 24 }}>
                     <div style={{ fontSize: 18, fontWeight: 800, color: "#fff", marginBottom: 4 }}>{selected.company}</div>
-                    <div style={{ fontSize: 12, color: "#6b7280", marginBottom: 20 }}>{selected.warmPath ? `Target: ${selected.contacts.find(c => c.angle?.includes("WARM")) ? selected.contacts.find(c => c.angle?.includes("WARM")).name : selected.cmo} via warm intro` : selected.cmo} · {selected.signals[0]?.text}</div>
+                    <div style={{ fontSize: 12, color: "#6b7280", marginBottom: 20 }}>{selected.cmo} · {selected.signals[0]?.text}</div>
                     <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
                       {[{ id: "sequence", label: "✦ 3-Email Sequence" }, { id: "intro", label: "🔗 Warm Intro Request" }].map(t => (
                         <button key={t.id} onClick={() => setOutreachType(t.id)} style={{ padding: "9px 16px", background: outreachType === t.id ? BRAND : "#1e2530", border: "none", borderRadius: 6, color: outreachType === t.id ? "#fff" : "#6b7280", fontWeight: 600, cursor: "pointer", fontSize: 12 }}>{t.label}</button>
@@ -610,7 +438,7 @@ export default function App() {
                     <button onClick={() => {
                       const prompt = outreachType === "sequence"
                         ? `Write a 3-email cold outreach sequence from a StackAdapt enterprise AE targeting ${selected.cmo}, ${selected.cmoTitle} at ${selected.company}. StackAdapt is a premium programmatic DSP. Their current DSP: ${selected.currentDSP}. Key buying signal: ${selected.signals[0]?.text}. Rules: Each email under 100 words. Highly specific to this company and signal. Include compelling subject lines. Email 1 = hook with insight. Email 2 = proof/case study. Email 3 = direct ask + personalized landing page URL. Human, not templated. Make it so good they'd feel stupid not responding.`
-                        : `Write a warm intro request email from a StackAdapt AE to their connector (${selected.warmConnector || "a mutual contact"}) asking for an intro to ${selected.contacts.find(c => c.angle?.includes("WARM"))?.name || selected.cmo} (${selected.contacts.find(c => c.angle?.includes("WARM"))?.title || selected.cmoTitle}) at ${selected.company}. Their email: ${selected.contacts.find(c => c.angle?.includes("WARM"))?.email || ""}. Also write the short forwardable email the connector sends to make the intro. Both under 80 words. Reference this signal: ${selected.signals[0]?.text}. Make it easy for the connector to say yes and impossible for the target to ignore.`;
+                        : `Write a warm intro request email from a StackAdapt AE to their connector (${selected.warmConnector || "a mutual contact"}) asking for an intro to ${selected.cmo} at ${selected.company}. Also write the forwardable email the connector sends. Both under 80 words. Reference the signal: ${selected.signals[0]?.text}. Make it easy for the connector to say yes.`;
                       generate(outreachType, prompt, selected.id);
                     }} style={{ padding: "11px 22px", background: BRAND, border: "none", borderRadius: 8, color: "#fff", fontWeight: 700, cursor: "pointer", fontSize: 13, marginBottom: 16 }}>
                       {loading[`${outreachType}-${selected.id}`] ? "Generating..." : `Generate ${outreachType === "sequence" ? "Email Sequence" : "Warm Intro"}`}
