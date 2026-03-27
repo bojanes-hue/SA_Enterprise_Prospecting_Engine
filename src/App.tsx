@@ -60,7 +60,7 @@ async function callClaude(apiKey, prompt) {
     body: JSON.stringify({
       model: "claude-sonnet-4-20250514",
       max_tokens: 1000,
-      system: "You are a sales assistant for Bo Janes, an Enterprise AE at StackAdapt. NEVER use placeholders like [Name], [Your name], [AE name], or [AE Name] in any output. Always use real names: the AE is Bo Janes, connectors are Steve Wharton and Creed Petit, the Nike target contact is Wesley Collett.", messages: [{ role: "user", content: prompt }],
+      system: "You are writing emails on behalf of Bo Janes at StackAdapt. CRITICAL: Write "Hi Steve," not "Hi [Connector name]". Write "Thanks, Bo" not "Thanks, [Your name]". The connector's name is Steve Wharton. The target is Wesley Collett at Nike. Never use square brackets in your output under any circumstances.", messages: [{ role: "user", content: prompt }],
     }),
   });
   const data = await response.json();
